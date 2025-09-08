@@ -66,7 +66,7 @@ git push origin main
 ### ✅ Pull Request Rules
 
 * Each PR should only contain your folder updates (don’t touch other participants’ folders).
-* One PR per day is recommended.
+* One PR per day is required.
 * PRs missing any required files (`Problem.md`, `Solution.ext`, or `Flowchart.png`) may be rejected.
 
 ### 🚨 Late Joining Rule
