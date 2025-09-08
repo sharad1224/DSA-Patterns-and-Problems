@@ -44,7 +44,7 @@ LeetCode_YourName/
 
 ## 📝 Rules
 - Solve **1 problem per day** for **14 days**.  
-- Any platform allowed (LeetCode, GFG, Codeforces, HackerRank, etc.).  
+- Any platform allowed (LeetCode, GFG, Codeforces, HackerRank, etc.), but use same platform for complete challenge.
 - Keep file naming consistent.  
 - Document properly → clarity matters more than difficulty.  
 - PRs with incomplete/missing files may be rejected.  
