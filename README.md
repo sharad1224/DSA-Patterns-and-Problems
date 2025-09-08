@@ -5,22 +5,31 @@ This is a structured open-source program designed to help you build consistency 
 
 🚀 **Organized as part of a Microsoft Learn Student Ambassador (MLSA) community event** to empower students in coding, problem-solving, and open-source contribution.  
 
+📅 **Challenge Duration:** 11th September 2025 → 24th September 2025 (14 Days)
+
 ---
 
 ## 🚀 How It Works
-1. Fork this repository.  
-2. Create a folder with the name format:  
+1. **Fork this repository.**  
+2. **Create a folder** with the name format:  
    **`PlatformName_YourName`**  
    Example: `LeetCode_Arya` or `GFG_Mrunalini`.  
-3. Inside your folder, create subfolders for each day:  
+3. **Inside your folder, create subfolders for each day:**  
 
-LeetCode_yourName/
+LeetCode_YourName/
 ├── Day-1/
 │ ├── Problem.md
 │ ├── Solution.java
 │ ├── Flowchart.png
 ├── Day-2/
-└── ...
+│ ├── Problem.md
+│ ├── Solution.java
+│ ├── Flowchart.png
+...
+├── Day-14/
+│ ├── Problem.md
+│ ├── Solution.java
+│ ├── Flowchart.png
 
 
 4. Each **Day-X** must include:  
