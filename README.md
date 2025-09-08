@@ -47,7 +47,8 @@ LeetCode_YourName/
 - Any platform allowed (LeetCode, GFG, Codeforces, HackerRank, etc.), but use same platform for complete challenge.
 - Keep file naming consistent.  
 - Document properly → clarity matters more than difficulty.  
-- PRs with incomplete/missing files may be rejected.  
+- PRs with incomplete/missing files may be rejected.
+- 🚨 Joining Late? You can still participate! Just solve multiple problems per day to catch up so that you finish by 24th September 2025.
 
 ---
 
