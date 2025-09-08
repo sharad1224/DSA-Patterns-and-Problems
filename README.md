@@ -18,18 +18,19 @@ This is a structured open-source program designed to help you build consistency 
 
 LeetCode_YourName/
 ├── Day-1/
-│ ├── Problem.md
-│ ├── Solution.java
-│ ├── Flowchart.png
+│   ├── Problem.md
+│   ├── Solution.java
+│   ├── Flowchart.png
 ├── Day-2/
-│ ├── Problem.md
-│ ├── Solution.java
-│ ├── Flowchart.png
+│   ├── Problem.md
+│   ├── Solution.java
+│   ├── Flowchart.png
 ...
 ├── Day-14/
-│ ├── Problem.md
-│ ├── Solution.java
-│ ├── Flowchart.png
+│   ├── Problem.md
+│   ├── Solution.java
+│   ├── Flowchart.png
+
 
 
 4. Each **Day-X** must include:  
