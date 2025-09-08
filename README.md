@@ -16,6 +16,7 @@ This is a structured open-source program designed to help you build consistency 
    Example: `LeetCode_Arya` or `GFG_Mrunalini`.  
 3. **Inside your folder, create subfolders for each day:**  
 
+```text
 LeetCode_YourName/
 ├── Day-1/
 │   ├── Problem.md
@@ -30,7 +31,6 @@ LeetCode_YourName/
 │   ├── Problem.md
 │   ├── Solution.java
 │   ├── Flowchart.png
-
 
 
 4. Each **Day-X** must include:  
