@@ -13,7 +13,7 @@ This is a structured open-source program designed to help you build consistency 
 1. **Fork this repository.**  
 2. **Create a folder** with the name format:  
    **`PlatformName_YourName`**  
-   Example: `LeetCode_Arya` or `GFG_Mrunalini`.  
+   Example: `LeetCode_Charlie` or `GFG_Genelia`.  
 3. **Inside your folder, create subfolders for each day:**  
 
 ```text
