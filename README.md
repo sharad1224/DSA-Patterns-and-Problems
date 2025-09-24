@@ -99,5 +99,5 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 ---
 
-<p align="center"> 👨‍💻 Built with ❤️ by **Mrunalini Pachpute** and Contributors ❤️ </p>
+<p align="center"> 👨‍💻 Built with ❤️ by <b>Mrunalini Pachpute</b> and Contributors ❤️ </p>
 
