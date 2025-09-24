@@ -87,7 +87,7 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 <p align="center">
   <a href="https://github.com/MrunaliniPachpute">
-    <img src="https://github.com/MrunaliniPachpute.png" width="100" height="100"/>
+    <img src="https://github.com/MrunaliniPachpute.png" width="100"/>
   </a>
 </p>
 
@@ -99,5 +99,5 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 ---
 
-👨‍💻 Built with ❤️ by **Mrunalini Pachpute** and Contributors ❤️
+<p align="center"> 👨‍💻 Built with ❤️ by **Mrunalini Pachpute** and Contributors ❤️ </p>
 
