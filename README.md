@@ -64,7 +64,7 @@ DSA-Solutions/
 ```
 *(Feel free to use pseudo codes too!)*  
 
-## Future Contribution Goals:
+## 🔮 Future Contribution Goals:
 - Add pseudo codes for commonly asked patterns (like sliding window, two pointers, backtracking templates)
 - Include explanatory comments or diagrams for tricky problems
 - Add references or links for further reading if needed
