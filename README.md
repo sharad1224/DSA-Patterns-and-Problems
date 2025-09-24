@@ -87,7 +87,7 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 <p align="center">
   <a href="https://github.com/MrunaliniPachpute">
-    <img src="https://github.com/MrunaliniPachpute.png" width="100"/>
+    <img src="https://github.com/MrunaliniPachpute.png" width="200"/>
   </a>
 </p>
 
