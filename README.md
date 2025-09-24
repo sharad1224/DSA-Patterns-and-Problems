@@ -121,7 +121,7 @@ For questions or help, feel free to **open an issue** in this repo.
 
 If you find this repo useful, **please give it a star** to help others find it.  
 ---
-## 🧑‍💻 Project Admin
+## 👩‍🦰💻 Project Admin
 
 <p align="center">
   <a href="https://github.com/MrunaliniPachpute">
