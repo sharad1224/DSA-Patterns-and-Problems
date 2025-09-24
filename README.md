@@ -1,7 +1,7 @@
 <h1 align="center"> 🧩 DSA-Patterns-and-Problems-Java Repository </h1>
 
-Welcome to the **DSA Solutions Repository**!  
-This repository is designed for students and developers to contribute **Data Structures & Algorithms solutions** in multiple programming languages.  
+Welcome to the **DSA-Patterns-and-Problems-Java Repository**!  
+This repository is designed for students and developers to contribute **Data Structures & Algorithms solutions** and recognizing frequent interview patterns.  
 It is **Hacktoberfest 2025 ready**, so you can improve your DSA skills while contributing to open-source! 🚀
 
 ---
