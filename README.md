@@ -85,8 +85,19 @@ If you find this repo useful, **please give it a star** to help others find it.
 ---
 ## 🧑‍💻 Project Admin
 
-[![Mrunalini Pachpute](https://github.com/MrunaliniPachpute.png)](https://github.com/MrunaliniPachpute)  
-**Mrunalini Pachpute**  
-GitHub: [@MrunaliniPachpute](https://github.com/MrunaliniPachpute)  
-Contact: You can open an issue for any questions or help
+<p align="center">
+  <a href="https://github.com/MrunaliniPachpute">
+    <img src="https://github.com/MrunaliniPachpute.png" width="100" height="100"/>
+  </a>
+</p>
+
+<p align="center">
+  <strong>Mrunalini Pachpute</strong><br/>
+  GitHub: <a href="https://github.com/MrunaliniPachpute">@MrunaliniPachpute</a><br/>
+  Contact: You can open an issue for any questions or help
+</p>
+
+---
+
+👨‍💻 Built with ❤️ by **Mrunalini Pachpute** and Contributors ❤️
 
