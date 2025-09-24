@@ -1,4 +1,4 @@
-# 🧩 DSA Solutions Repository
+<h1 align="center"> 🧩 DSA Solutions Repository </h1>
 
 Welcome to the **DSA Solutions Repository**!  
 This repository is designed for students and developers to contribute **Data Structures & Algorithms solutions** in multiple programming languages.  
