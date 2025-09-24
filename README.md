@@ -1,8 +1,7 @@
 <h1 align="center"> 🧩 DSA-Patterns-and-Problems-Java Repository </h1>
 
 Welcome to the **DSA-Patterns-and-Problems-Java Repository**!  
-This repository is designed for students and developers to contribute **Data Structures & Algorithms solutions** and recognizing frequent interview patterns.  
-It is **Hacktoberfest 2025 ready**, so you can improve your DSA skills while contributing to open-source! 🚀
+Repository for learning, practicing, and contributing Data Structures & Algorithms solutions, with a focus on frequent interview patterns. Perfect for Hacktoberfest 2025! 🚀
 
 ---
 
@@ -28,20 +27,59 @@ It is **Hacktoberfest 2025 ready**, so you can improve your DSA skills while con
 ```
 DSA-Solutions/
 │
-├── Arrays/
-├── Linked_List/
-├── Greedy_Algorithm/
-├── Recursion/
-├── Binary_Search/
-├── Heaps/
-├── Stack_and_Queue/
-├── String/
-├── Binary_Tree/
-├── Binary_Search_Tree/
-├── Graph/
-├── Dynamic_Programming/
-├── Trie/
-└── README.md
+├── Arrays/                  # Problems related to arrays
+│   ├── TwoSum.java
+│   ├── MaximumSubarray.java
+│   └── ...
+│
+├── LinkedLists/             # Single, double, circular linked list problems
+│   ├── ReverseLinkedList.java
+│   └── ...
+│
+├── StacksAndQueues/         # Stack and Queue related problems
+│   ├── MinStack.java
+│   └── QueueUsingStacks.java
+│
+├── Strings/                 # String manipulation problems
+│   ├── PalindromeCheck.java
+│   └── LongestSubstring.java
+│
+├── Recursion/               # Recursive solutions and backtracking
+│   ├── Factorial.java
+│   ├── NQueens.java
+│   └── ...
+│
+├── BinarySearch/            # Binary search and its variations
+│   ├── SearchInRotatedArray.java
+│   └── ...
+│
+├── Heaps/                   # Heap / PriorityQueue problems
+│   ├── KthLargestElement.java
+│   └── ...
+│
+├── BinaryTrees/             # Binary tree problems
+│   ├── InorderTraversal.java
+│   └── ...
+│
+├── BinarySearchTrees/       # BST-specific problems
+│   ├── ValidateBST.java
+│   └── ...
+│
+├── Graphs/                  # Graph algorithms (DFS, BFS, Dijkstra, etc.)
+│   ├── BFS.java
+│   ├── DFS.java
+│   └── ...
+│
+├── DynamicProgramming/      # DP problems (1D, 2D, memoization, tabulation)
+│   ├── Knapsack.java
+│   └── ...
+│
+├── Tries/                   # Trie / Prefix tree problems
+│   ├── ImplementTrie.java
+│   └── ...
+│
+└── README.md                # This README file
+
 ```
 ---
 ## 📝 Contribution Guidelines
