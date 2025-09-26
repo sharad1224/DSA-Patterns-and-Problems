@@ -103,9 +103,17 @@ DSA-Solutions/
 ```
 
 ## 🔮 Future Contribution Goals:
-- Add pseudo codes for commonly asked patterns
+- Add flowcharts for commonly asked patterns
 - Include explanatory comments or diagrams for tricky problems
 - Add references or links for further reading if needed
+
+## 👋 Contributors Welcome!
+
+This repository is **open for contributions**! If you love DSA and want to help others prepare for coding interviews, you can:
+
+- Add new problems with explanations and pseudo-code  
+- Improve existing pages with better formatting, diagrams, or examples  
+- Fix broken links, typos, or styling issues  
 
 ## 🎯 Hacktoberfest Guidelines
 
