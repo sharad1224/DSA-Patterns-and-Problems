@@ -3,7 +3,7 @@
 Welcome to the **DSA-Patterns-and-Problems Repository**!  
 Repository for learning, practicing, and contributing Data Structures & Algorithms solutions, with a focus on frequent interview patterns. Perfect for Hacktoberfest 2025! 🚀
 
-Try out project : <a href=" https://mrunalinipachpute.github.io/DSA-Patterns-and-Problems/">Click Here</a>
+<b>Try out project : <a href="https://mrunalinipachpute.github.io/DSA-Patterns-and-Problems/" target="_blank">Click Here</a> </b>
 
 ---
 
