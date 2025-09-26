@@ -1,6 +1,6 @@
-<h1 align="center"> 🧩 DSA-Patterns-and-Problems-Java Repository </h1>
+<h1 align="center"> 🧩 DSA-Patterns-and-Problems Repository </h1>
 
-Welcome to the **DSA-Patterns-and-Problems-Java Repository**!  
+Welcome to the **DSA-Patterns-and-Problems Repository**!  
 Repository for learning, practicing, and contributing Data Structures & Algorithms solutions, with a focus on frequent interview patterns. Perfect for Hacktoberfest 2025! 🚀
 
 ---
@@ -28,54 +28,54 @@ Repository for learning, practicing, and contributing Data Structures & Algorith
 DSA-Solutions/
 │
 ├── Arrays/                  # Problems related to arrays
-│   ├── TwoSum.java
-│   ├── MaximumSubarray.java
+│   ├── TwoSum.html
+│   ├── MaximumSubarray.html
 │   └── ...
 │
 ├── LinkedLists/             # Single, double, circular linked list problems
-│   ├── ReverseLinkedList.java
+│   ├── ReverseLinkedList.html
 │   └── ...
 │
 ├── StacksAndQueues/         # Stack and Queue related problems
-│   ├── MinStack.java
-│   └── QueueUsingStacks.java
+│   ├── MinStack.html
+│   └── QueueUsingStacks.html
 │
 ├── Strings/                 # String manipulation problems
-│   ├── PalindromeCheck.java
-│   └── LongestSubstring.java
+│   ├── PalindromeCheck.html
+│   └── LongestSubstring.html
 │
 ├── Recursion/               # Recursive solutions and backtracking
-│   ├── Factorial.java
-│   ├── NQueens.java
+│   ├── Factorial.html
+│   ├── NQueens.html
 │   └── ...
 │
 ├── BinarySearch/            # Binary search and its variations
-│   ├── SearchInRotatedArray.java
+│   ├── SearchInRotatedArray.html
 │   └── ...
 │
 ├── Heaps/                   # Heap / PriorityQueue problems
-│   ├── KthLargestElement.java
+│   ├── KthLargestElement.html
 │   └── ...
 │
 ├── BinaryTrees/             # Binary tree problems
-│   ├── InorderTraversal.java
+│   ├── InorderTraversal.html
 │   └── ...
 │
 ├── BinarySearchTrees/       # BST-specific problems
-│   ├── ValidateBST.java
+│   ├── ValidateBST.html
 │   └── ...
 │
 ├── Graphs/                  # Graph algorithms (DFS, BFS, Dijkstra, etc.)
-│   ├── BFS.java
-│   ├── DFS.java
+│   ├── BFS.html
+│   ├── DFS.html
 │   └── ...
 │
 ├── DynamicProgramming/      # DP problems (1D, 2D, memoization, tabulation)
-│   ├── Knapsack.java
+│   ├── Knapsack.html
 │   └── ...
 │
 ├── Tries/                   # Trie / Prefix tree problems
-│   ├── ImplementTrie.java
+│   ├── ImplementTrie.html
 │   └── ...
 │
 └── README.md                # This README file
@@ -98,12 +98,11 @@ DSA-Solutions/
 
 ## 🌐 Language
 ```
-- Java  
+- No specific language : pseudo codes to focus on approach  
 ```
-*(Feel free to use pseudo codes too!)*  
 
 ## 🔮 Future Contribution Goals:
-- Add pseudo codes for commonly asked patterns (like sliding window, two pointers, backtracking templates)
+- Add pseudo codes for commonly asked patterns
 - Include explanatory comments or diagrams for tricky problems
 - Add references or links for further reading if needed
 
