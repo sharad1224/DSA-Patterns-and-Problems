@@ -11,7 +11,8 @@ Repository for learning, practicing, and contributing Data Structures & Algorith
 2. **Clone** it to your local machine:  
    ```bash
    git clone https://github.com/<your-username>/<repo-name>.git
-3. Create a branch for your contribution:
+3. To check home page open index.html in project root.
+   To contribute Create a branch for your contribution:
    ```
    git checkout -b feature/your-branch-name
    ```

@@ -1,86 +1,99 @@
-# 🤝 Contributing Guide
+# Contributing to DSA-Patterns-and-Problems 🚀
 
-Thank you for participating in the **DSA 14-Day Internship Challenge** 🎉
-Follow the steps below to contribute your daily solutions properly.
+First off, thank you for considering contributing! Your help makes this repository better for everyone preparing for coding interviews. 💻✨
+
+---
+
+## **Table of Contents**
+
+- [How to Contribute](#how-to-contribute)
+- [Project Structure](#project-structure)
+- [Guidelines](#guidelines)
+- [Adding a New Problem](#adding-a-new-problem)
+- [Reporting Issues](#reporting-issues)
+- [Code of Conduct](#code-of-conduct)
 
 ---
 
-## 📌 Steps to Contribute
+## **How to Contribute**
 
-### 1. Fork the Repository
-
-* Click on the **Fork** button (top right of this repo).
-* This creates a copy of the repo under your GitHub account.
-
-### 2. Clone Your Fork
+1. **Fork** the repository.  
+2. **Clone** your forked repo to your local machine:
 
 ```bash
-git clone https://github.com/YourUsername/DSA-14Day-Internship.git
-cd DSA-14Day-Internship
+git clone https://github.com/<your-username>/DSA-Patterns-and-Problems.git
 ```
-
-### 3. Create Your Folder
-
-Use the format: `PlatformName_YourName`
-Example: `LeetCode_Arya` or `GFG_Mrunalini`.
-
-### 4. Add Daily Subfolders
-
-Inside your folder, create subfolders for each day:
-
-```text
-LeetCode_YourName/
-├── Day-1/
-│   ├── Problem.md
-│   ├── Solution.java
-│   ├── Flowchart.png
-├── Day-2/
-│   ├── Problem.md
-│   ├── Solution.java
-│   ├── Flowchart.png
-...
-├── Day-14/
-│   ├── Problem.md
-│   ├── Solution.java
-│   ├── Flowchart.png
+3. Create a branch for your feature or fix:
 ```
-
-### 📂 File Guidelines
-
-* `Problem.md` → Include problem statement, your thought process, and time/space complexity.
-* `Solution.ext` → Your code file (.cpp, .java, .py, etc.).
-* `Flowchart.png` → A diagram/image of your chosen approach.
-
-⚠️ **Make sure filenames are consistent** — case-sensitive on GitHub.
-
-### 🔄 Workflow for Daily Contribution
-
-```bash
-git add .
-git commit -m "Added Day-1 solution for LeetCode_YourName"
-git push origin main
+git checkout -b feature/your-feature-name
 ```
+4. Make your changes (HTML, CSS, JS, or add new problem pages).
+5. Commit your changes with a descriptive message:
+```
+git commit -m "Add new array problem: Sliding Window Maximum"
+```
+6. Push your branch:
+```
+git push origin feature/your-feature-name
+```
+7.Open a Pull Request to the main repository.
+## Project Structure
+```
+DSA-Patterns-and-Problems/
+│
+├── index.html          # Home page
+├── About.html          # About page
+├── Contact.html        # Contact page
+├── Arrays/             # Array topics
+│   ├── index.html
+│   ├── TwoSum/
+│   └── ...
+│   └── AllArrayProblems.css #CSS for all araay question patterns
+├── LinkedList/
+├── StackQueue/
+├── Strings/
+├── Recursion/
+├── BinarySearch/
+├── Heap/
+├── BinaryTrees/
+├── BST/
+├── Graphs/
+├── DP/
+├── Tries/
+└── index.css           # Main CSS
+└── about.css           # About Page CSS
+└── contact.css           # Contact Page CSS
 
-* Go to the original repo → Click **New Pull Request**.
+```
+Each topic folder contains separate HTML pages for each problem with approaches explained (Brute, Better, Optimal) along with pseudo-code and complexity.
+<hr>
 
-### ✅ Pull Request Rules
+## Guidelines
+1. Make sure your HTML/CSS matches the existing style and formatting.
+2. Use proper semantic HTML.
+3. Add time and space complexity for every problem.
+4. Ensure all links in navbar point to correct pages.
+5. For JavaScript-based interactivity, keep code modular and clean.
+6. Use Google Material Icons for consistent design.
 
-* Each PR should only contain your folder updates (don’t touch other participants’ folders).
-* One PR per day is required.
-* PRs missing any required files (`Problem.md`, `Solution.ext`, or `Flowchart.png`) may be rejected.
+## Adding a New Problem
+1. Create a folder inside the relevant topic (e.g., Arrays/SlidingWindowMaximum/).
+2. Add the HTML page: SlidingWindowMaximum.html.
+3. Use the existing problem page template:
+Problem Statement
+Example(s)
+Approach 1: Brute Force
+Approach 2: Better
+Approach 3: Optimal
+4. You may create your own custom css file if required under same folder
+5. Pseudo-code + Time & Space Complexity
+6. Link it in the topic index page (e.g., Arrays/index.html).
 
-### 🚨 Late Joining Rule
+## Reporting Issues
+If you find a bug, missing content, or a broken link, please create an issue with a clear description.
 
-* If you joined after the start date, you can still catch up.
-* Solve multiple problems in a single day until you are up-to-date.
-* All contributions must be complete by **24th September 2025**.
+## Code of Conduct
+Be respectful, kind, and professional. All contributions must follow a positive and inclusive approach.
 
-### 🎯 Tips
-
-* Keep your solutions simple and well-documented.
-* Ask doubts or share discussions in **Issues/Discussions** tab.
-* Be respectful to other contributors.
-
-🙌 **Happy Coding & All the Best for your 14-Day DSA Journey!**
-
----
+## Thank You! 🙏
+Your contribution helps learners worldwide master DSA and FAANG patterns. Happy Coding! 💻💡
