@@ -214,6 +214,6 @@ If you find this repo useful, **please give it a star** to help others find it.
 <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Handlee&size=26&pause=1000&color=FFA500&center=true&vCenter=true&width=600&lines=Built+with+%E2%9D%A4%EF%B8%8F+by+Mrunalini+Pachpute+and+Contributors" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FFC0CB&height=100&section=footer"/>
 
 </div>
