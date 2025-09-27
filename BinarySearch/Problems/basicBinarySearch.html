@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Binary Search - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Basic Binary Search</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given a sorted array <strong>nums</strong> and a target value <strong>target</strong>, 
+        return the index of <strong>target</strong> in <strong>nums</strong>. 
+        If target does not exist, return -1.
+      </p>
+      <p><strong>Example:</strong> nums = [1,3,5,7,9], target = 5 → Output: 2</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Iterative Binary Search</h2>
+      <p><strong>Explanation:</strong> Use two pointers (low & high) to narrow down the search space iteratively.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+low = 0
+high = n - 1
+while low <= high:
+    mid = (low + high) // 2
+    if nums[mid] == target:
+        return mid
+    else if nums[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1
+return -1
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Recursive Binary Search</h2>
+      <p><strong>Explanation:</strong> Recursively divide array to find target.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Space Complexity:</strong> O(log n) (due to recursion stack)</p>
+      <pre class="pseudo-code">
+function binarySearch(nums, low, high, target):
+    if low > high:
+        return -1
+    mid = (low + high) // 2
+    if nums[mid] == target:
+        return mid
+    else if nums[mid] < target:
+        return binarySearch(nums, mid+1, high, target)
+    else:
+        return binarySearch(nums, low, mid-1, target)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Using Built-in Language Functions (Optional)</h2>
+      <p><strong>Explanation:</strong> Many languages have built-in functions for binary search, e.g., bisect in Python, Arrays.binarySearch in Java.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+// Python example
+import bisect
+index = bisect.bisect_left(nums, target)
+if index < len(nums) and nums[index] == target:
+    return index
+else:
+    return -1
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

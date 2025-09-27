@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Stack - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Min Stack</h1>
+
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.</p>
+      <p><strong>Example:</strong> push(2), push(0), push(3), push(0), getMin() → 0</p>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 1: Brute Force</h2>
+      <p><strong>Explanation:</strong> Store all elements; find min by scanning stack each time.</p>
+      <p><strong>Time Complexity:</strong> push/pop O(1), getMin O(n)</p>
+      <p><strong>Space Complexity:</strong> O(n)</p>
+      <pre class="pseudo-code">
+stack = empty
+push(x): stack.push(x)
+pop(): stack.pop()
+top(): return stack[-1]
+getMin(): return min(stack)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Auxiliary Stack (Better)</h2>
+      <p><strong>Explanation:</strong> Maintain an additional stack to track current minimum.</p>
+      <p><strong>Time Complexity:</strong> O(1) for all operations</p>
+      <p><strong>Space Complexity:</strong> O(n)</p>
+      <pre class="pseudo-code">
+stack = empty
+minStack = empty
+push(x):
+    stack.push(x)
+    if minStack is empty or x <= minStack.top():
+        minStack.push(x)
+pop():
+    if stack.pop() == minStack.top():
+        minStack.pop()
+top(): return stack.top()
+getMin(): return minStack.top()
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Single Stack with Encoded Values (Optimal)</h2>
+      <p><strong>Explanation:</strong> Use single stack with encoded differences to track minimum.</p>
+      <p><strong>Time Complexity:</strong> O(1)</p>
+      <p><strong>Space Complexity:</strong> O(n)</p>
+      <pre class="pseudo-code">
+stack = empty
+minVal = ∞
+push(x):
+    if x < minVal:
+        stack.push(2*x - minVal)
+        minVal = x
+    else:
+        stack.push(x)
+pop():
+    top = stack.pop()
+    if top < minVal:
+        minVal = 2*minVal - top
+top(): return minVal if top < minVal else top
+getMin(): return minVal
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

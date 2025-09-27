@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge Two Sorted Lists - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Merge Two Sorted Lists</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        You are given the heads of two sorted linked lists <strong>list1</strong> and <strong>list2</strong>. 
+        Merge the two lists into one sorted linked list and return its head.
+      </p>
+      <p><strong>Example:</strong> Input: 1 → 2 → 4, 1 → 3 → 4 → Output: 1 → 1 → 2 → 3 → 4 → 4</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Iterative Merge</h2>
+      <p><strong>Explanation:</strong> Use a dummy node and append smaller node at each step.</p>
+      <p><strong>Time Complexity:</strong> O(m+n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+dummy = new Node(-1)
+tail = dummy
+while list1 != NULL and list2 != NULL:
+    if list1.val < list2.val:
+        tail.next = list1
+        list1 = list1.next
+    else:
+        tail.next = list2
+        list2 = list2.next
+    tail = tail.next
+tail.next = list1 if list1 != NULL else list2
+return dummy.next
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Recursive Merge</h2>
+      <p><strong>Explanation:</strong> Compare heads recursively and build merged list.</p>
+      <p><strong>Time Complexity:</strong> O(m+n)</p>
+      <p><strong>Space Complexity:</strong> O(m+n) (recursion stack)</p>
+      <pre class="pseudo-code">
+if list1 == NULL:
+    return list2
+if list2 == NULL:
+    return list1
+if list1.val < list2.val:
+    list1.next = merge(list1.next, list2)
+    return list1
+else:
+    list2.next = merge(list1, list2.next)
+    return list2
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

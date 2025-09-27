@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Window Median - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Sliding Window Median</h1>
+
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given an array and a window size k, find the median of each sliding window.
+      </p>
+      <p><strong>Example:</strong> nums = [1,3,-1,-3,5,3,6,7], k=3 → Output: [1,-1,-1,3,5,6]</p>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 1: Sort Each Window</h2>
+      <p><strong>Explanation:</strong> Naive approach: sort each window and pick median.</p>
+      <p><strong>Time Complexity:</strong> O(n k log k)</p>
+      <p><strong>Space Complexity:</strong> O(k)</p>
+      <pre class="pseudo-code">
+for i in 0..n-k:
+    window = nums[i..i+k-1]
+    sort(window)
+    median = window[k//2]
+    add median to result
+return result
+      </pre>
+    </section>
+
+    <section class

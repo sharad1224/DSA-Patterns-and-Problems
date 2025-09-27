@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kth Largest / Smallest Element - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Kth Largest / Smallest Element</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given an integer array <strong>nums</strong> and an integer <strong>k</strong>, 
+        return the kth largest element in the array. Similarly, the kth smallest element can be found.
+      </p>
+      <p><strong>Example:</strong> nums = [3,2,1,5,6,4], k = 2 → Output: 5 (2nd largest)</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Sorting (Simple)</h2>
+      <p><strong>Explanation:</strong> Sort the array and pick the kth largest/smallest directly.</p>
+      <p><strong>Time Complexity:</strong> O(n log n)</p>
+      <p><strong>Space Complexity:</strong> O(1) or O(n) depending on sort implementation</p>
+      <pre class="pseudo-code">
+sort(nums)
+return nums[n-k]  # kth largest
+return nums[k-1]  # kth smallest
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Min Heap (Optimal for Kth Largest)</h2>
+      <p><strong>Explanation:</strong> Maintain a min-heap of size k. Push elements. The root is the kth largest.</p>
+      <p><strong>Time Complexity:</strong> O(n log k)</p>
+      <p><strong>Space Complexity:</strong> O(k)</p>
+      <pre class="pseudo-code">
+create empty min-heap
+for num in nums:
+    add num to heap
+    if heap size > k:
+        remove min element
+return heap root
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Quickselect (Optimal Average)</h2>
+      <p><strong>Explanation:</strong> Use partitioning like in quicksort to find kth largest without full sort.</p>
+      <p><strong>Time Complexity:</strong> O(n) average, O(n^2) worst-case</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+choose pivot
+partition array into < pivot and >= pivot
+if k in right partition:
+    recurse on right
+elif k in left:
+    recurse on left
+else:
+    return pivot
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

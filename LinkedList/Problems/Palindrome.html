@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Linked List - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Palindrome Linked List</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given the head of a singly linked list, return true if it is a palindrome, or false otherwise.
+      </p>
+      <p><strong>Example:</strong> Input: 1 → 2 → 2 → 1, Output: true</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Copy to Array</h2>
+      <p><strong>Explanation:</strong> Store list values in an array and check palindrome using two pointers.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(n)</p>
+      <pre class="pseudo-code">
+arr = []
+while head != NULL:
+    arr.append(head.val)
+    head = head.next
+left = 0, right = len(arr)-1
+while left < right:
+    if arr[left] != arr[right]:
+        return false
+    left++, right--
+return true
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Reverse Second Half</h2>
+      <p><strong>Explanation:</strong> Find middle, reverse second half, compare halves.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+find middle of list
+reverse second half
+compare first and second half nodes
+if all match:
+    return true
+else:
+    return false
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

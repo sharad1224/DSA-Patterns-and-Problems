@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Linked List - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Reverse Linked List</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given the <strong>head</strong> of a singly linked list, reverse the list and return the new head.
+      </p>
+      <p><strong>Example:</strong> Input: 1 → 2 → 3 → 4 → 5 → NULL, Output: 5 → 4 → 3 → 2 → 1 → NULL</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Iterative</h2>
+      <p><strong>Explanation:</strong> Use three pointers: prev, curr, next. Reverse links one by one.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+prev = NULL
+curr = head
+while curr != NULL:
+    next = curr.next
+    curr.next = prev
+    prev = curr
+    curr = next
+return prev
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Recursive</h2>
+      <p><strong>Explanation:</strong> Reverse the rest of the list recursively and fix pointers.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(n) (recursion stack)</p>
+      <pre class="pseudo-code">
+if head == NULL or head.next == NULL:
+    return head
+rest = reverse(head.next)
+head.next.next = head
+head.next = NULL
+return rest
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

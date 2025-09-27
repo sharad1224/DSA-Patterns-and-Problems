@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Peak Element - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Find Peak Element</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        A peak element in an array is an element that is strictly greater than its neighbors. 
+        Given an integer array <strong>nums</strong>, find any peak element and return its index. 
+        You may assume nums[-1] = nums[n] = -∞.
+      </p>
+      <p><strong>Example:</strong> nums = [1,2,3,1] → Output: 2 (nums[2] = 3 is a peak)</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Linear Scan</h2>
+      <p><strong>Explanation:</strong> Traverse array and return first element greater than neighbors.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+for i in 0..n-1:
+    if (i==0 or nums[i] > nums[i-1]) and (i==n-1 or nums[i] > nums[i+1]):
+        return i
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Binary Search</h2>
+      <p><strong>Explanation:</strong> Compare middle element with neighbors; move to side with higher neighbor.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+low = 0
+high = n-1
+while low < high:
+    mid = (low+high)//2
+    if nums[mid] < nums[mid+1]:
+        low = mid + 1
+    else:
+        high = mid
+return low
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Recursive Binary Search</h2>
+      <p><strong>Explanation:</strong> Recursively check mid and its neighbor to find peak.</p>
+      <p><strong>Time Complexity:</strong> O(log n)</p>
+      <p><strong>Space Complexity:</strong> O(log n) recursion stack</p>
+      <pre class="pseudo-code">
+function findPeak(nums, low, high):
+    if low == high:
+        return low
+    mid = (low+high)//2
+    if nums[mid] < nums[mid+1]:
+        return findPeak(nums, mid+1, high)
+    else:
+        return findPeak(nums, low, mid)
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

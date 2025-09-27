@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Sort - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Topological Sort</h1>
+
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>Return a topological ordering of a Directed Acyclic Graph (DAG).</p>
+      <p><strong>Example:</strong> Graph with edges [[5,2],[5,0],[4,0],[4,1],[2,3],[3,1]] → [5,4,2,3,1,0]</p>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 1: DFS Post-order</h2>
+      <p><strong>Explanation:</strong> Perform DFS and add nodes to stack after exploring neighbors; reverse stack gives order.</p>
+      <p><strong>Time Complexity:</strong> O(V + E)</p>
+      <p><strong>Space Complexity:</strong> O(V) recursion stack</p>
+      <pre class="pseudo-code">
+visited = set()
+stack = []
+function DFS(node):
+    visited.add(node)
+    for neighbor in node.neighbors:
+        if neighbor not visited:
+            DFS(neighbor)
+    stack.push(node)
+for node in all_nodes:
+    if node not visited:
+        DFS(node)
+return reversed(stack)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Kahn’s Algorithm (BFS)</h2>
+      <p><strong>Explanation:</strong> Use in-degree array; push nodes with 0 in-degree into queue and update in-degrees.</p>
+      <p><strong>Time Complexity:</strong> O(V + E)</p>
+      <p><strong>Space Complexity:</strong> O(V)</p>
+      <pre class="pseudo-code">
+in_degree = [0]*V
+for u in all_nodes:
+    for v in u.neighbors:
+        in_degree[v] += 1
+queue = nodes with in_degree 0
+while queue not empty:
+    node = queue.pop()
+    result.append(node)
+    for neighbor in node.neighbors:
+        in_degree[neighbor] -= 1
+        if in_degree[neighbor]==0:
+            queue.push(neighbor)
+return result
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+</body>
+</html>

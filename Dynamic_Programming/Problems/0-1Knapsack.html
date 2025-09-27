@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0/1 Knapsack - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>0/1 Knapsack Problem</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given weights <strong>wt[]</strong> and values <strong>val[]</strong> of <strong>n</strong> items, and a maximum weight <strong>W</strong>, 
+        find the maximum total value of items that can be included in the knapsack without exceeding the weight limit. 
+        Each item can be included at most once.
+      </p>
+      <p><strong>Example:</strong> Input: val = [60, 100, 120], wt = [10, 20, 30], W = 50, Output: 220</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Recursion</h2>
+      <p><strong>Explanation:</strong> Consider two choices for each item: include or exclude.</p>
+      <p><strong>Time Complexity:</strong> O(2<sup>n</sup>)</p>
+      <p><strong>Space Complexity:</strong> O(n) recursion stack</p>
+      <pre class="pseudo-code">
+function knapsack(n, W):
+    if n == 0 or W == 0: return 0
+    if wt[n-1] &gt; W:
+        return knapsack(n-1, W)
+    return max(
+        val[n-1] + knapsack(n-1, W - wt[n-1]),
+        knapsack(n-1, W)
+    )
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Memoization (Top-Down DP)</h2>
+      <p><strong>Explanation:</strong> Store results for subproblems (n, W) to avoid recomputation.</p>
+      <p><strong>Time Complexity:</strong> O(n*W)</p>
+      <p><strong>Space Complexity:</strong> O(n*W) + O(n) recursion stack</p>
+      <pre class="pseudo-code">
+dp = array of size n+1 x W+1, initialized to -1
+function knapsack(n, W):
+    if n == 0 or W == 0: return 0
+    if dp[n][W] != -1: return dp[n][W]
+    if wt[n-1] &gt; W:
+        dp[n][W] = knapsack(n-1, W)
+    else:
+        dp[n][W] = max(
+            val[n-1] + knapsack(n-1, W - wt[n-1]),
+            knapsack(n-1, W)
+        )
+    return dp[n][W]
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Tabulation (Bottom-Up DP)</h2>
+      <p><strong>Explanation:</strong> Fill DP table iteratively for all weights and items.</p>
+      <p><strong>Time Complexity:</strong> O(n*W)</p>
+      <p><strong>Space Complexity:</strong> O(n*W)</p>
+      <pre class="pseudo-code">
+dp[0..n][0..W] = 0
+for i = 1 to n:
+    for w = 1 to W:
+        if wt[i-1] &lt;= w:
+            dp[i][w] = max(dp[i-1][w], val[i-1] + dp[i-1][w - wt[i-1]])
+        else:
+            dp[i][w] = dp[i-1][w]
+return dp[n][W]
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 4: Space Optimized DP</h2>
+      <p><strong>Explanation:</strong> Use 1D array instead of 2D to save space.</p>
+      <p><strong>Time Complexity:</strong> O(n*W)</p>
+      <p><strong>Space Complexity:</strong> O(W)</p>
+      <pre class="pseudo-code">
+dp[0..W] = 0
+for i = 0 to n-1:
+    for w = W down to wt[i]:
+        dp[w] = max(dp[w], val[i] + dp[w - wt[i]])
+return dp[W]
+      </pre>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

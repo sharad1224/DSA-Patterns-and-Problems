@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree Traversals - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Tree Traversals</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given the root of a binary tree, traverse it in different orders: <strong>inorder</strong>, <strong>preorder</strong>, and <strong>postorder</strong>.
+      </p>
+      <p><strong>Example:</strong></p>
+      <pre class="pseudo-code">
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+Inorder → [4,2,5,1,3]
+Preorder → [1,2,4,5,3]
+Postorder → [4,5,2,3,1]
+      </pre>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Recursive Traversal</h2>
+      <p><strong>Explanation:</strong> Use standard recursion for inorder, preorder, and postorder.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(h) for recursion stack, where h is tree height</p>
+      <pre class="pseudo-code">
+// Inorder
+inorder(node):
+    if node == NULL: return
+    inorder(node.left)
+    print(node.val)
+    inorder(node.right)
+
+// Preorder
+preorder(node):
+    if node == NULL: return
+    print(node.val)
+    preorder(node.left)
+    preorder(node.right)
+
+// Postorder
+postorder(node):
+    if node == NULL: return
+    postorder(node.left)
+    postorder(node.right)
+    print(node.val)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Iterative Using Stack</h2>
+      <p><strong>Explanation:</strong> Use a stack to simulate recursion for inorder, preorder, or postorder traversal.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(h)</p>
+      <pre class="pseudo-code">
+// Iterative Inorder
+stack = empty
+curr = root
+while curr != NULL or stack not empty:
+    while curr != NULL:
+        stack.push(curr)
+        curr = curr.left
+    curr = stack.pop()
+    print(curr.val)
+    curr = curr.right
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Morris Traversal (Inorder, O(1) space)</h2>
+      <p><strong>Explanation:</strong> Threaded binary tree technique to traverse without recursion or stack.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+      <pre class="pseudo-code">
+curr = root
+while curr != NULL:
+    if curr.left == NULL:
+        print(curr.val)
+        curr = curr.right
+    else:
+        predecessor = curr.left
+        while predecessor.right != NULL and predecessor.right != curr:
+            predecessor = predecessor.right
+        if predecessor.right == NULL:
+            predecessor.right = curr
+            curr = curr.left
+        else:
+            predecessor.right = NULL
+            print(curr.val)
+            curr = curr.right
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

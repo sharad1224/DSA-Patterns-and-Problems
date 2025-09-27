@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height & Diameter of Binary Tree - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Height & Diameter of Binary Tree</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given the root of a binary tree, calculate: <br>
+        1. <strong>Height:</strong> The number of nodes along the longest path from root to leaf. <br>
+        2. <strong>Diameter:</strong> The length of the longest path between any two nodes.
+      </p>
+      <p><strong>Example:</strong></p>
+      <pre class="pseudo-code">
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+Height = 3
+Diameter = 4 (path: 4 → 2 → 1 → 3)
+      </pre>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Height and Diameter Separately</h2>
+      <p><strong>Explanation:</strong> Compute height recursively for each node and calculate diameter as leftHeight + rightHeight + 1.</p>
+      <p><strong>Time Complexity:</strong> O(n²) in worst case (recomputing heights)</p>
+      <p><strong>Space Complexity:</strong> O(h) recursion stack</p>
+      <pre class="pseudo-code">
+function height(node):
+    if node == NULL: return 0
+    return 1 + max(height(node.left), height(node.right))
+
+function diameter(node):
+    if node == NULL: return 0
+    leftHeight = height(node.left)
+    rightHeight = height(node.right)
+    leftDia = diameter(node.left)
+    rightDia = diameter(node.right)
+    return max(leftHeight + rightHeight + 1, max(leftDia, rightDia))
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Single Pass (Optimized)</h2>
+      <p><strong>Explanation:</strong> Return height along with diameter from a recursive function to avoid recomputation.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(h)</p>
+      <pre class="pseudo-code">
+function helper(node):
+    if node == NULL: return (0,0)  // (height, diameter)
+    leftH, leftD = helper(node.left)
+    rightH, rightD = helper(node.right)
+    height = 1 + max(leftH, rightH)
+    diameter = max(leftH + rightH + 1, max(leftD, rightD))
+    return (height, diameter)
+
+height, diameter = helper(root)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Iterative Using Postorder</h2>
+      <p><strong>Explanation:</strong> Use stack to traverse in postorder, storing height at each node to compute diameter iteratively.</p>
+      <p><strong>Time Complexity:</strong> O(n)</p>
+      <p><strong>Space Complexity:</strong> O(h)</p>
+      <pre class="pseudo-code">
+stack = empty
+mapHeight = {}
+push root to stack
+while stack not empty:
+    node = stack.top()
+    if node.left and node.left not in mapHeight:
+        push node.left
+        continue
+    if node.right and node.right not in mapHeight:
+        push node.right
+        continue
+    pop node
+    leftH = mapHeight.get(node.left,0)
+    rightH = mapHeight.get(node.right,0)
+    mapHeight[node] = 1 + max(leftH, rightH)
+    diameter = max(diameter, leftH + rightH + 1)
+      </pre>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbounded Knapsack - CodeDSA</title>
+  <link rel="stylesheet" href="../../AllProblems.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CodeDSA</div>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Unbounded Knapsack</h1>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <h2>Problem Statement</h2>
+      <p>
+        Given <strong>n</strong> items with weights <strong>wt[]</strong> and values <strong>val[]</strong>,  
+        and a knapsack capacity <strong>W</strong>, determine the maximum total value you can obtain.  
+        You can use **each item multiple times**.
+      </p>
+      <p><strong>Example:</strong> Input: W = 8, wt = [2,3,5], val = [50,100,140], Output: 300 (take two 3-weight items and one 2-weight)</p>
+    </section>
+
+    <!-- Approaches -->
+    <section class="approach-section">
+      <h2>Approach 1: Recursion</h2>
+      <p><strong>Explanation:</strong> For each item, decide how many times to include it (0 to W/wt[i]) recursively.</p>
+      <p><strong>Time Complexity:</strong> Exponential</p>
+      <p><strong>Space Complexity:</strong> O(n) recursion stack</p>
+      <pre class="pseudo-code">
+function UnboundedKnapsack(W, n):
+    if n == 0 or W == 0: return 0
+    if wt[n-1] <= W:
+        return max(
+            val[n-1] + UnboundedKnapsack(W - wt[n-1], n),
+            UnboundedKnapsack(W, n-1)
+        )
+    else:
+        return UnboundedKnapsack(W, n-1)
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 2: Memoization (Top-Down DP)</h2>
+      <p><strong>Explanation:</strong> Store results for subproblems (W, n) to avoid recomputation.</p>
+      <p><strong>Time Complexity:</strong> O(n * W)</p>
+      <p><strong>Space Complexity:</strong> O(n * W) DP array + O(n) recursion stack</p>
+      <pre class="pseudo-code">
+dp[0..n][0..W] = -1
+function UnboundedKnapsack(W, n):
+    if n == 0 or W == 0: return 0
+    if dp[n][W] != -1: return dp[n][W]
+    if wt[n-1] <= W:
+        dp[n][W] = max(
+            val[n-1] + UnboundedKnapsack(W - wt[n-1], n),
+            UnboundedKnapsack(W, n-1)
+        )
+    else:
+        dp[n][W] = UnboundedKnapsack(W, n-1)
+    return dp[n][W]
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 3: Tabulation (Bottom-Up DP)</h2>
+      <p><strong>Explanation:</strong> Iteratively fill DP table where dp[i][w] represents max value using first i items for weight w.</p>
+      <p><strong>Time Complexity:</strong> O(n * W)</p>
+      <p><strong>Space Complexity:</strong> O(n * W)</p>
+      <pre class="pseudo-code">
+dp[0..n][0..W] = 0
+for i = 1 to n:
+    for w = 0 to W:
+        if wt[i-1] <= w:
+            dp[i][w] = max(val[i-1] + dp[i][w - wt[i-1]], dp[i-1][w])
+        else:
+            dp[i][w] = dp[i-1][w]
+return dp[n][W]
+      </pre>
+    </section>
+
+    <section class="approach-section">
+      <h2>Approach 4: Space Optimization</h2>
+      <p><strong>Explanation:</strong> Use a 1D DP array, update dp[w] for each item to save space.</p>
+      <p><strong>Time Complexity:</strong> O(n * W)</p>
+      <p><strong>Space Complexity:</strong> O(W)</p>
+      <pre class="pseudo-code">
+dp[0..W] = 0
+for i = 0 to n-1:
+    for w = wt[i] to W:
+        dp[w] = max(dp[w], val[i] + dp[w - wt[i]])
+return dp[W]
+      </pre>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
