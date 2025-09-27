@@ -1,5 +1,11 @@
 <h1 align="center"> 🧩 DSA-Patterns-and-Problems Repository </h1>
 
+<div align="center">
+
+![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+</div>
+
 Welcome to the **DSA-Patterns-and-Problems Repository**!  
 Repository for learning, practicing, and contributing Data Structures & Algorithms solutions, with a focus on frequent interview patterns. Perfect for Hacktoberfest 2025! 🚀
 
