@@ -99,6 +99,7 @@ DSA-Solutions/
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 📝 Contribution Guidelines
 
 - Ensure your code is **clean and well-commented**  
@@ -112,6 +113,7 @@ DSA-Solutions/
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 🔖 Issues
 
 - Look for issues labeled: `good first issue` or `hacktoberfest`  
@@ -121,6 +123,7 @@ DSA-Solutions/
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 🌐 Language
 ```
 - No specific language : pseudo codes to focus on approach  
@@ -130,6 +133,7 @@ DSA-Solutions/
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 🔮 Future Contribution Goals:
 - Add flowcharts for commonly asked patterns
 - Include explanatory comments or diagrams for tricky problems
@@ -139,6 +143,7 @@ DSA-Solutions/
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 👋 Contributors Welcome!
 
 This repository is **open for contributions**! If you love DSA and want to help others prepare for coding interviews, you can:
@@ -151,6 +156,7 @@ This repository is **open for contributions**! If you love DSA and want to help 
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 🎯 Hacktoberfest Guidelines
 
 - Repo must be **public** and tagged `hacktoberfest`  
@@ -161,6 +167,7 @@ This repository is **open for contributions**! If you love DSA and want to help 
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## 🤝 Support
 
 For questions or help, feel free to **open an issue** in this repo.  
@@ -169,6 +176,7 @@ For questions or help, feel free to **open an issue** in this repo.
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 ## ⭐ Star this repo
 
 If you find this repo useful, **please give it a star** to help others find it.  
@@ -177,6 +185,7 @@ If you find this repo useful, **please give it a star** to help others find it.
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
+
 <h2 align="center"> 💻 Project Admin </h2>
 
 <p align="center">
@@ -195,7 +204,6 @@ If you find this repo useful, **please give it a star** to help others find it.
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
-<p align="center"> 👨‍💻 Built with ❤️ by <b>Mrunalini Pachpute</b> and <b>Contributors</b> ❤️ </p>
 
 <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Handlee&size=26&pause=1000&color=FFA500&center=true&vCenter=true&width=600&lines=Built+with+%E2%9D%A4%EF%B8%8F+by+Mrunalini+Pachpute+and+Contributors" />
