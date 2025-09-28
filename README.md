@@ -46,58 +46,131 @@ Repository for learning, practicing, and contributing Data Structures & Algorith
 ```
 DSA-Solutions/
 │
-├── Arrays/                  # Problems related to arrays
-│   ├── TwoSum.html
-│   ├── MaximumSubarray.html
-│   └── ...
+├── Arrays/                  
+│   ├── array.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── LinkedLists/             # Single, double, circular linked list problems
-│   ├── ReverseLinkedList.html
-│   └── ...
+├── LinkedLists/             
+│   ├── linkedlist.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── StacksAndQueues/         # Stack and Queue related problems
-│   ├── MinStack.html
-│   └── QueueUsingStacks.html
+├── StacksAndQueues/         
+│   ├── stacksqueues.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── Strings/                 # String manipulation problems
-│   ├── PalindromeCheck.html
-│   └── LongestSubstring.html
+├── Strings/                 
+│   ├── strings.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── Recursion/               # Recursive solutions and backtracking
-│   ├── Factorial.html
-│   ├── NQueens.html
-│   └── ...
+├── Recursion/               
+│   ├── recursion.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── BinarySearch/            # Binary search and its variations
-│   ├── SearchInRotatedArray.html
-│   └── ...
+├── BinarySearch/            
+│   ├── binarysearch.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── Heaps/                   # Heap / PriorityQueue problems
-│   ├── KthLargestElement.html
-│   └── ...
+├── Heaps/                   
+│   ├── heaps.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── BinaryTrees/             # Binary tree problems
-│   ├── InorderTraversal.html
-│   └── ...
+├── BinaryTrees/             
+│   ├── binarytrees.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── BinarySearchTrees/       # BST-specific problems
-│   ├── ValidateBST.html
-│   └── ...
+├── BinarySearchTrees/       
+│   ├── bst.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── Graphs/                  # Graph algorithms (DFS, BFS, Dijkstra, etc.)
-│   ├── BFS.html
-│   ├── DFS.html
-│   └── ...
+├── Graphs/                  
+│   ├── graphs.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── DynamicProgramming/      # DP problems (1D, 2D, memoization, tabulation)
-│   ├── Knapsack.html
-│   └── ...
+├── DynamicProgramming/      
+│   ├── dp.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-├── Tries/                   # Trie / Prefix tree problems
-│   ├── ImplementTrie.html
-│   └── ...
+├── Tries/                   
+│   ├── tries.html
+│   ├── Problems/
+│   │     ├── problem1.html
+│   │     ├── problem2.html
+│   │     ├── problem3.html
+│   │     ├── problem4.html
+│   │     ├── problem5.html
 │
-└── README.md                # This README file
+│
+├── CSS/                     # All stylesheets here
+│   ├── index.css
+│   ├── contact.css
+│   ├── AllProblems.css
+│   ├── AllTopics.css
+│   ├── about.css
+│
+├── index.html
+├── index.js
+│
+├── contact.html
+├── about.html
+│
+├── Contributing.md
+└── README.md
+
 
 ```
 <div align="center">
