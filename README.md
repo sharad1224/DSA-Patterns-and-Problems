@@ -1,4 +1,4 @@
-<h1 align="center"> 🧩 DSA-Patterns-and-Problems Repository </h1>
+<h1 align="center"> 🧩 DSA-Patterns-and-Problems Repository </h1> 
 
 <div align="center">
 
