@@ -250,7 +250,7 @@ This repository is **open for contributions**! If you love DSA and want to help 
 ##📜 License
 
 This project is licensed under the MIT License.
-See the LICENSE file for more details.
+See the <a href="/License.md">LICENSE</a> file for more details.
  
 <div align="center">
 
