@@ -247,6 +247,17 @@ This repository is **open for contributions**! If you love DSA and want to help 
 
 </div>
 
+##📜 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
+ 
+<div align="center">
+
+![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+</div>
+
 ## 🤝 Support
 
 For questions or help, feel free to **open an issue** in this repo.  
