@@ -1,0 +1,54 @@
+/* Snake Cursor Styles */
+
+/* Hide system cursor when snake effect is active */
+body.snake-cursor {
+  cursor: none;
+}
+
+/* Snake segments - trail behind cursor */
+.snake-segment {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #ffb347, #f68c6e, #f16363); /* warm gradient */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.85;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Subtle fade effect as trail disappears */
+.snake-segment.fade {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Snake Toggle Button in Navbar */
+.snake-btn {
+  margin-left: 1.2rem;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #f5c686, #ffcc70, #ffd9a6); /* match navbar link gradient */
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* Hover state */
+.snake-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #ffd9a6, #ffcc70, #ffb347);
+}
+
+/* Active (when enabled) */
+.snake-btn.active {
+  background: linear-gradient(90deg, #f16363, #f68c6e, #ffb347);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
