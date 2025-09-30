@@ -147,3 +147,9 @@ main {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+/* Right side container (links + snake button) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* space between links and button */
+}
