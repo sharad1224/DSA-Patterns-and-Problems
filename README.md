@@ -298,8 +298,11 @@ If you find this repo useful, **please give it a star** to help others find it.
 ## 👨‍💻 Our Contributors 
 
 [![Contributors](https://img.shields.io/github/contributors/MrunaliniPachpute/DSA-Patterns-and-Problems?style=for-the-badge)](https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors)
-
-
+<p align="center">
+  <a href="https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MrunaliniPachpute/DSA-Patterns-and-Problems" alt="Contributors" />
+  </a>
+</p>
 
 <div align="center">
 
