@@ -10,7 +10,7 @@ body.snake-cursor {
   position: fixed;
   width: 14px;
   height: 14px;
-  background: linear-gradient(135deg, #ffb347, #f68c6e, #f16363); /* warm gradient */
+  background: linear-gradient(135deg, #ffb347, #ff8a65, #f16363); /* enhanced warm gradient */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
