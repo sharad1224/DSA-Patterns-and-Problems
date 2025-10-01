@@ -12,13 +12,13 @@ toggleBtn.addEventListener("click", () => {
   if (snakeEnabled) {
     document.body.classList.add("snake-cursor");
     document.addEventListener("mousemove", drawSnake);
-    toggleBtn.textContent = "Disable Snake";
+    toggleBtn.innerHTML = '<span style="margin-left: 20px;">Disable Snake</span>';
     toggleBtn.classList.add("active");
   } else {
     document.body.classList.remove("snake-cursor");
     document.removeEventListener("mousemove", drawSnake);
     clearTrail();
-    toggleBtn.textContent = "Snake Cursor";
+    toggleBtn.innerHTML = '<span style="margin-left: 20px;">Snake Cursor</span>';
     toggleBtn.classList.remove("active");
   }
 });
