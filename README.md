@@ -295,7 +295,7 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 </div>
 
-## 👨‍💻 Our Contributors
+## 👨‍💻 Our Contributors 
 
 [![Contributors](https://img.shields.io/github/contributors/MrunaliniPachpute/DSA-Patterns-and-Problems?style=for-the-badge)](https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors)
 
