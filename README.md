@@ -295,6 +295,22 @@ If you find this repo useful, **please give it a star** to help others find it.
 
 </div>
 
+## 👨‍💻 Our Contributors
+
+[![Contributors](https://img.shields.io/github/contributors/MrunaliniPachpute/DSA-Patterns-and-Problems?style=for-the-badge)](https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors)
+
+<p align="center">
+  <a href="https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MrunaliniPachpute/DSA-Patterns-and-Problems" alt="Contributors" />
+  </a>
+</p>
+
+<div align="center">
+
+![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+</div>
+
 <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Handlee&size=26&pause=1000&color=FFA500&center=true&vCenter=true&width=600&lines=Built+with+%E2%9D%A4%EF%B8%8F+by+Mrunalini+Pachpute+and+Contributors" />
 <img src="https://capsule-render.vercel.app/api?type=waving&color=FFC0CB&height=100&section=footer"/>
