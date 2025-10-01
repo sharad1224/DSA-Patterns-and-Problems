@@ -194,16 +194,14 @@ main h1::after {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-family: sans-serif;
-    z-index: 1000; /* Add z-index to ensure it's on top of other content */
+    z-index: 1000; 
 }
 
-/* EXPAND: Change width and height on hover */
 .recently-viewed-sidebar:hover {
     max-width: 500px;
     max-height: 700px;
 }
 
-/* HIDE: Target the content to make it transparent */
 #recently-viewed-list,
 #clear-history-btn,
 .recently-viewed-sidebar h2 span {
@@ -211,36 +209,35 @@ main h1::after {
     transition: opacity 0.1s ease-in-out;
 }
 
-/* SHOW: Fade the content back in when the sidebar is hovered */
+
 .recently-viewed-sidebar:hover #recently-viewed-list,
 .recently-viewed-sidebar:hover #clear-history-btn,
 .recently-viewed-sidebar:hover h2 span {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-    transition-delay: 0.15s; /* Wait for the box to expand before content appears */
+    transition-delay: 0.15s; 
 }
 
-/* COLLAPSED STATE: for the title (h2) */
+
 .recently-viewed-sidebar h2 {
     margin-top: 0;
     font-size: 1.2rem;
     color: #343a40;
     margin-bottom: 0;
     padding-bottom: 0;
-    border-bottom: 2px solid transparent; /* Border is transparent when collapsed */
+    border-bottom: 2px solid transparent; 
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
 }
 
-/* EXPANDED STATE: Restore the h2 styles on hover */
+
 .recently-viewed-sidebar:hover h2 {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom-color: #007bff;
 }
 
-/* --- General styling for the content --- */
 
 #recently-viewed-list {
     list-style-type: none;
