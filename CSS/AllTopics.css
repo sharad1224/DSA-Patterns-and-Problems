@@ -167,6 +167,7 @@ main .intro-text {
   font-weight: 600;
   color: #f16363;
   font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .topic-desc {
