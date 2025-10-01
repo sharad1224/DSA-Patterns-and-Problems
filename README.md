@@ -303,6 +303,9 @@ If you find this repo useful, **please give it a star** to help others find it.
     <img src="https://contrib.rocks/image?repo=MrunaliniPachpute/DSA-Patterns-and-Problems" alt="Contributors" />
   </a>
 </p>
+<a href="https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems/graphs/contributors">
+  <img src="https://opencollective.com/github-contributors/contributors.svg?width=890&button=false" />
+</a>
 
 <div align="center">
 
