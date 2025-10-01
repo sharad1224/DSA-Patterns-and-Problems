@@ -1,27 +1,43 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Snake toggle logic
+    // Snake toggle logic with persistence
     const toggleBtn = document.getElementById("snakeToggle");
     if (toggleBtn) {
-        let snakeEnabled = false;
+        // Check localStorage for saved snake state
+        let snakeEnabled = localStorage.getItem('snakeEnabled') === 'true';
         let trail = [];
+
+        // Initialize snake state based on saved preference
+        if (snakeEnabled) {
+            enableSnake();
+        }
 
         toggleBtn.addEventListener("click", () => {
             snakeEnabled = !snakeEnabled;
+            // Save state to localStorage
+            localStorage.setItem('snakeEnabled', snakeEnabled);
+            
             if (snakeEnabled) {
-                document.body.classList.add("snake-cursor");
-                document.addEventListener("mousemove", drawSnake);
-                toggleBtn.innerHTML = '<span style="margin-left: 20px;">Disable Snake</span>';
-                toggleBtn.classList.add("active");
+                enableSnake();
             } else {
-                document.body.classList.remove("snake-cursor");
-                document.removeEventListener("mousemove", drawSnake);
-                clearTrail();
-                toggleBtn.innerHTML = '<span style="margin-left: 20px;">Snake Cursor</span>';
-                toggleBtn.classList.remove("active");
+                disableSnake();
             }
         });
+
+        function enableSnake() {
+            document.body.classList.add("snake-cursor");
+            document.addEventListener("mousemove", drawSnake);
+            toggleBtn.innerHTML = '<span style="margin-left: 20px;">Disable Snake</span>';
+            toggleBtn.classList.add("active");
+        }
+
+        function disableSnake() {
+            document.body.classList.remove("snake-cursor");
+            document.removeEventListener("mousemove", drawSnake);
+            clearTrail();
+            toggleBtn.innerHTML = '<span style="margin-left: 20px;">Snake Cursor</span>';
+            toggleBtn.classList.remove("active");
+        }
 
         function drawSnake(e) {
             const seg = document.createElement("div");
@@ -50,12 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // reads from localStorage and builds the HTML list
     function displayRecentProblems() {
+        if (!recentlyViewedList) return; // Guard clause if element doesn't exist
+        
         recentlyViewedList.innerHTML = '';
         const recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
 
         if (recentlyViewed.length === 0) {
             recentlyViewedList.innerHTML = '<li>No recent problems viewed</li>';
-            clearHistoryBtn.style.display = 'none';
+            if (clearHistoryBtn) clearHistoryBtn.style.display = 'none';
         } else {
             recentlyViewed.forEach(problem => {
                 const listItem = document.createElement('li');
@@ -65,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 listItem.appendChild(link);
                 recentlyViewedList.appendChild(listItem);
             });
-            clearHistoryBtn.style.display = 'block';
+            if (clearHistoryBtn) clearHistoryBtn.style.display = 'block';
         }
     }
 
@@ -74,12 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('recentlyViewed');
         displayRecentProblems();
     }
+    
     if (clearHistoryBtn) {
         clearHistoryBtn.addEventListener('click', clearHistory);
     }
-    displayRecentProblems();
+    
+    if (recentlyViewedList) {
+        displayRecentProblems();
+    }
 
 });
+
 function navigateTo(page) {
     window.location.href = page;
 }
