@@ -6,6 +6,17 @@
   font-family: 'Public Sans', sans-serif;
 }
 
+
+/* Anchor tag reset */
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
