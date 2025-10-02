@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../CSS/AllTopics.css" />
 </head>
 <body>
+  <script src="../JS/ProgressBar.js" defer></script>
   <!-- Navbar --->
   <nav class="navbar">
     <div class="logo">CodeDSA</div>
@@ -21,28 +22,33 @@
     <h1>Linked List Topics</h1>
     <p class="intro-text">Master essential linked list problems and patterns frequently asked in interviews.</p>
 
-    <ul class="topic-list">
-      <li onclick="navigateToTopic('./Problems/ReverseLL.html')">
+    <ul id="topics" class="topic-list" data-topic="ll">
+      <li data-href="./Problems/ReverseLL.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">01</span>
         <span class="topic-name">Reverse Linked List</span>
         <span class="topic-desc">Iterative and recursive reversal of a linked list</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/DetectCycle.html')">
+      <li data-href="./Problems/DetectCycle.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">02</span>
         <span class="topic-name">Detect Cycle in Linked List</span>
         <span class="topic-desc">Floyd’s cycle detection algorithm (slow & fast pointers)</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/MergeSortedLL.html')">
+      <li data-href="./Problems/MergeSortedLL.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">03</span>
         <span class="topic-name">Merge Two Sorted Lists</span>
         <span class="topic-desc">Classic merging problem using pointers</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/Palindrome.html')">
+      <li data-href="./Problems/Palindrome.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">04</span>
         <span class="topic-name">Palindrome Linked List</span>
         <span class="topic-desc">Check palindrome using reverse second half technique</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/IntersectionLL.html')">
+      <li data-href="./Problems/IntersectionLL.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">05</span>
         <span class="topic-name">Intersection of Two Linked Lists</span>
         <span class="topic-desc">Find the node where two lists intersect using pointer trick</span>

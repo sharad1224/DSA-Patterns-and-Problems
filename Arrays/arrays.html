@@ -9,6 +9,8 @@
 </head>
 
 <body>
+  <script src="../JS/ProgressBar.js" defer></script>
+
   <!-- Navbar --->
   <nav class="navbar">
     <div class="logo">CodeDSA</div>
@@ -23,28 +25,33 @@
     <h1>Array Topics</h1>
     <p class="intro-text">Explore popular array problems and patterns to master your DSA skills.</p>
 
-    <ul class="topic-list">
-      <li onclick="navigateToTopic('./Problems/twoSum.html')">
+    <ul id="topics" class="topic-list" data-topic="arrays">
+      <li data-href="./Problems/twoSum.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">01</span>
         <span class="topic-name">Two Sum</span>
         <span class="topic-desc">Classic problem: find two numbers that sum to target</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/subarray.html')">
+      <li data-href="./Problems/subarray.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">02</span>
         <span class="topic-name">Maximum Subarray</span>
         <span class="topic-desc">Sliding window/Kadane's algorithm to find max contiguous sum</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/prodOfArray.html')">
+      <li data-href="./Problems/prodOfArray.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">03</span>
         <span class="topic-name">Product of Array Except Self</span>
         <span class="topic-desc">Prefix/suffix product array without using division</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/ContainerWater.html')">
+      <li data-href="./Problems/ContainerWater.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">04</span>
         <span class="topic-name">Container With Most Water</span>
         <span class="topic-desc">Two-pointer technique to maximize area between lines</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/trappingRainwater.html')">
+      <li data-href="./Problems/trappingRainwater.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">05</span>
         <span class="topic-name">Trapping Rain Water</span>
         <span class="topic-desc">Compute trapped water using stack/two-pointer techniques</span>
@@ -79,11 +86,6 @@
   <footer>
     <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
   </footer>
-  <script>
-    function navigateToTopic(page) {
-      window.location.href = page;
-    }
-  </script>
 
 </body>
 

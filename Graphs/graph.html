@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../CSS/AllTopics.css" />
 </head>
 <body>
+  <script src="../JS/ProgressBar.js" defer></script>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">CodeDSA</div>
@@ -21,28 +22,33 @@
     <h1>Graph Topics</h1>
     <p class="intro-text">Master essential graph problems and patterns frequently asked in interviews.</p>
 
-    <ul class="topic-list">
-      <li onclick="navigateToTopic('./Problems/bfsDFS.html')">
+    <ul id="topics" class="topic-list" data-topic="graph">
+      <li data-href="./Problems/bfsDFS.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">01</span>
         <span class="topic-name">BFS & DFS Traversals</span>
         <span class="topic-desc">Basic graph traversal using BFS and DFS, both iterative & recursive</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/connectedComponents.html')">
+      <li data-href="./Problems/connectedComponents.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">02</span>
         <span class="topic-name">Connected Components / Island Counting</span>
         <span class="topic-desc">DFS/BFS pattern to count separate components in a graph or grid</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/topologicalSort.html')">
+      <li data-href="./Problems/topologicalSort.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">03</span>
         <span class="topic-name">Topological Sorting</span>
         <span class="topic-desc">DFS or Kahn's algorithm for DAG ordering</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/shortestPath.html')">
+      <li data-href="./Problems/shortestPath.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">04</span>
         <span class="topic-name">Shortest Path (Dijkstra / BFS)</span>
         <span class="topic-desc">Find shortest distances using BFS (unweighted) or Dijkstra (weighted)</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/minSpanningTree.html')">
+      <li data-href="./Problems/minSpanningTree.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">05</span>
         <span class="topic-name">Minimum Spanning Tree (MST)</span>
         <span class="topic-desc">Kruskal's or Prim's algorithm for MST construction</span>
@@ -68,10 +74,6 @@
     <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
   </footer>
 
-  <script>
-    function navigateToTopic(path) {
-      window.location.href = path;
-    }
-  </script>
+
 </body>
 </html>

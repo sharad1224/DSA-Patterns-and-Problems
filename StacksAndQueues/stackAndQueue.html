@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../CSS/AllTopics.css" />
 </head>
 <body>
+  <script src="../JS/ProgressBar.js" defer></script>
   <!-- Navbar --->
   <nav class="navbar">
     <div class="logo">CodeDSA</div>
@@ -21,28 +22,33 @@
     <h1>Stack & Queue Topics</h1>
     <p class="intro-text">Master essential stack and queue problems and patterns frequently asked in interviews.</p>
 
-    <ul class="topic-list">
-      <li onclick="navigateToTopic('./Problems/validParentheses.html')">
+    <ul id="topics" class="topic-list" data-topic="stack-queue">
+      <li data-href="./Problems/validParentheses.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">01</span>
         <span class="topic-name">Valid Parentheses</span>
         <span class="topic-desc">Balanced parentheses check using stack</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/MinStack.html')">
+      <li data-href="./Problems/MinStack.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">02</span>
         <span class="topic-name">Min Stack</span>
         <span class="topic-desc">Design stack with O(1) min retrieval</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/NextGreater.html')">
+      <li data-href="./Problems/NextGreater.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">03</span>
         <span class="topic-name">Next Greater Element</span>
         <span class="topic-desc">Monotonic stack pattern for array problems</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/ImplementQueueUsingStack.html')">
+      <li data-href="./Problems/ImplementQueueUsingStack.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">04</span>
         <span class="topic-name">Implement Queue using Stacks</span>
         <span class="topic-desc">Classic stack-to-queue conversion</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/slidingWindowMax.html')">
+      <li data-href="./Problems/slidingWindowMax.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">05</span>
         <span class="topic-name">Sliding Window Maximum</span>
         <span class="topic-desc">Deque-based optimization for window problems</span>
@@ -68,10 +74,6 @@
     <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
   </footer>
 
-  <script>
-    function navigateToTopic(path) {
-      window.location.href = path;
-    }
-  </script>
+
 </body>
 </html>

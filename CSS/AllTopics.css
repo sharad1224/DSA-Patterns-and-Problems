@@ -110,7 +110,7 @@ main .intro-text {
 
 .topic-list {
   list-style: none;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0;
 }
@@ -138,6 +138,12 @@ main .intro-text {
   font-weight: bold;
   color: #f68c6e;
   flex-shrink: 0;
+}
+
+.topic-completed {
+  font-weight: bold;
+  color: #f68c6e;
+  min-width: 1.5ch;  
 }
 
 .topic-name {

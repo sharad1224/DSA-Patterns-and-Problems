@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../CSS/AllTopics.css" />
 </head>
 <body>
+  <script src="../JS/ProgressBar.js" defer></script>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">CodeDSA</div>
@@ -21,28 +22,33 @@
     <h1>String Topics</h1>
     <p class="intro-text">Master essential string problems and patterns frequently asked in interviews.</p>
 
-    <ul class="topic-list">
-      <li onclick="navigateToTopic('./Problems/longestPalinSubstring.html')">
+    <ul id="topics" class="topic-list" data-topic="string">
+      <li data-href="./Problems/longestPalinSubstring.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">01</span>
         <span class="topic-name">Longest Palindromic Substring</span>
         <span class="topic-desc">Find the longest substring that is a palindrome</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/longestSubstringWithoutRepeat.html')">
+      <li data-href="./Problems/longestSubstringWithoutRepeat.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">02</span>
         <span class="topic-name">Longest Substring Without Repeating Characters</span>
         <span class="topic-desc">Sliding window pattern to track unique characters</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/validAnagrams.html')">
+      <li data-href="./Problems/validAnagrams.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">03</span>
         <span class="topic-name">Valid Anagram</span>
         <span class="topic-desc">Hash map pattern to check frequency of characters</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/groupAnagrams.html')">
+      <li data-href="./Problems/groupAnagrams.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">04</span>
         <span class="topic-name">Group Anagrams</span>
         <span class="topic-desc">Sorting & hash-based grouping of strings</span>
       </li>
-      <li onclick="navigateToTopic('./Problems/Matching.html')">
+      <li data-href="./Problems/Matching.html">
+        <span class="topic-completed">&nbsp;</span>
         <span class="topic-number">05</span>
         <span class="topic-name">String Matching / Pattern Matching</span>
         <span class="topic-desc">KMP / Rabin-Karp algorithm for substring search</span>
@@ -68,10 +74,6 @@
     <p>&copy; 2025 Mrunalini Pachpute. All rights reserved.</p>
   </footer>
 
-  <script>
-    function navigateToTopic(path) {
-      window.location.href = path;
-    }
-  </script>
+
 </body>
 </html>
