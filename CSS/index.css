@@ -6,6 +6,78 @@
   font-family: 'Public Sans', sans-serif;
 }
 
+/* Anchor tag reset */
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: linear-gradient(90deg, #fbb69f, #f68c6e, #f16363); /* warm, soft professional gradient */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ffe5d4; /* subtle highlight */
+}
+
+/* Navbar Buttons */
+.navbar .nav-links li a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px; /* rounded pill shape */
+  background: linear-gradient(90deg, #f5c686, #ffcc70, #ffd9a6); /* warm professional gradient */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* Hover effect */
+.navbar .nav-links li a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  background: linear-gradient(90deg, #ffd9a6, #ffcc70, #ffb347); /* subtle gradient shift */
+}
+
+/* Optional active button style */
+.navbar .nav-links li a.active {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #ffcc70, #ffb347, #ffd9a6);
+}
+
+
+.navbar .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
 /* Footer */
 footer {
   text-align: center;
