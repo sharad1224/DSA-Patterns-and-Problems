@@ -54,15 +54,22 @@
       <p><strong>Time Complexity:</strong> O(m+n)</p>
       <p><strong>Space Complexity:</strong> O(m)</p>
       <pre class="pseudo-code">
-nodes = set()
-while headA != NULL:
-    nodes.add(headA)
-    headA = headA.next
-while headB != NULL:
-    if headB in nodes:
-        return headB
-    headB = headB.next
-return NULL
+Function getIntersectionNode(headA, headB):
+    Create an empty set called visitedNodes
+
+    // Traverse list A and store each node reference
+    While headA is not null:
+        Add headA to visitedNodes
+        headA = headA.next
+
+    // Traverse list B and check for intersection
+    While headB is not null:
+        If headB exists in visitedNodes:
+            Return headB  // Intersection found
+        headB = headB.next
+
+    Return null  // No intersection
+
       </pre>
     </section>
 
@@ -72,12 +79,23 @@ return NULL
       <p><strong>Time Complexity:</strong> O(m+n)</p>
       <p><strong>Space Complexity:</strong> O(1)</p>
       <pre class="pseudo-code">
-ptrA = headA
-ptrB = headB
-while ptrA != ptrB:
-    ptrA = ptrA.next if ptrA != NULL else headB
-    ptrB = ptrB.next if ptrB != NULL else headA
-return ptrA
+Function getIntersectionNode(headA, headB):
+    Set pointerA = headA
+    Set pointerB = headB
+
+    While pointerA is not equal to pointerB:
+        If pointerA is null:
+            pointerA = headB
+        Else:
+            pointerA = pointerA.next
+
+        If pointerB is null:
+            pointerB = headA
+        Else:
+            pointerB = pointerB.next
+
+    Return pointerA  // Either the intersection node or null
+
       </pre>
     </section>
   </main>
