@@ -83,3 +83,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function navigateTo(page) {
     window.location.href = page;
 }
+
+// Flowchart toggle functionality
+document.querySelectorAll(".flowchart-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const container = btn.nextElementSibling; // find the div right after this button
+    container.style.display = 
+      container.style.display === "none" ? "block" : "none";
+
+    // Optional: toggle button text
+    btn.textContent = container.style.display === "block" 
+      ? "Hide Flowchart" 
+      : "View Flowchart";
+  });
+});
