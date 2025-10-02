@@ -1,11 +1,9 @@
-/* Breadcrumb Navigation Styles */
 .breadcrumb-container {
-  background: linear-gradient(90deg, #fef7f0, #fdf2e9);
+  background-color: #faf7f5;
   padding: 1rem 3rem;
-  border-bottom: 1px solid #f5c686;
   margin: 0;
   position: sticky;
-  top: 70px; /* Below the navbar */
+  top: 70px;
   z-index: 99;
 }
 
@@ -55,7 +53,6 @@
   font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .breadcrumb-container {
     padding: 0.75rem 1.5rem;
