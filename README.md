@@ -23,18 +23,19 @@ Repository for learning, practicing, and contributing Data Structures & Algorith
 2. **Clone** it to your local machine:  
    ```bash
    git clone https://github.com/<your-username>/<repo-name>.git
-3. To check home page open index.html in project root.
+3. Run `npm install`
+4. To check home page open index.html in project root.
    To contribute Create a branch for your contribution:
    ```
    git checkout -b feature/your-branch-name
    ```
-4. Add your solution in the appropriate folder (see folder structure below)
-5. Commit your changes:
+5. Add your solution in the appropriate folder (see folder structure below)
+6. Commit your changes:
    ```
    git add .
    git commit -m "Add <problem name> solution in <language>"
    ```
-6. Push your branch and create a Pull Request
+7. Push your branch and create a Pull Request
 
 <div align="center">
 
