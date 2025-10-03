@@ -97,22 +97,38 @@ document.addEventListener('DOMContentLoaded', () => {
   if (recentlyViewedList) {
     displayRecentProblems();
   }
-
+  
+  // Topics Filter Dropdown Toggle Logic
+  const dropdownBtn = document.getElementById('topicsDropdownBtn');
+  const dropdownContent = document.getElementById('topicsDropdownContent');
+  
+  if (dropdownBtn && dropdownContent) {
+    // Toggle dropdown on button click
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownContent.classList.toggle('show');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+        dropdownContent.classList.remove('show');
+      }
+    });
+  }
+  
   // Topics Filter Logic
   const topicFilters = document.querySelectorAll('.topic-filter');
   const cards = document.querySelectorAll('.card[data-topic]');
-
   if (topicFilters.length > 0 && cards.length > 0) {
     topicFilters.forEach((checkbox) => {
       checkbox.addEventListener('change', filterCards);
     });
-
     function filterCards() {
       // Get all checked filter values
       const checkedTopics = Array.from(topicFilters)
         .filter((cb) => cb.checked)
         .map((cb) => cb.value);
-
       // Show/hide cards based on filter
       cards.forEach((card) => {
         const cardTopic = card.getAttribute('data-topic');
