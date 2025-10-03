@@ -14,42 +14,92 @@
   font-weight: 600;
 }
 
-.filter-checkboxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+/* Dropdown Styles */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
 }
 
-.filter-checkboxes label {
+.dropdown-toggle {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  background-color: #fff;
-  border: 2px solid #ddd;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
   transition: all 0.3s ease;
-  font-size: 0.95em;
-  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.dropdown-toggle:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+.dropdown-toggle:active {
+  transform: translateY(0);
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-content.show {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.dropdown-content label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
   user-select: none;
 }
 
-.filter-checkboxes label:hover {
-  border-color: #007bff;
+.dropdown-content label:hover {
   background-color: #f0f7ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
 
-.filter-checkboxes input[type='checkbox'] {
+.dropdown-content input[type='checkbox'] {
   width: 18px;
   height: 18px;
   cursor: pointer;
   accent-color: #007bff;
 }
 
-.filter-checkboxes input[type='checkbox']:checked + span {
+.dropdown-content input[type='checkbox']:checked ~ span {
   color: #007bff;
   font-weight: 600;
 }
@@ -59,13 +109,18 @@
   .topics-filter-container {
     padding: 15px;
   }
-
-  .filter-checkboxes {
-    gap: 10px;
+  
+  .filter-dropdown {
+    max-width: 100%;
   }
-
-  .filter-checkboxes label {
-    padding: 6px 10px;
+  
+  .dropdown-toggle {
+    padding: 10px 14px;
+    font-size: 0.95em;
+  }
+  
+  .dropdown-content label {
+    padding: 8px 10px;
     font-size: 0.9em;
   }
 }
