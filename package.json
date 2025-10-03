@@ -5,5 +5,11 @@
   "repository": "https://github.com/MrunaliniPachpute/DSA-Patterns-and-Problems",
   "author": "Mrunalini Pachpute",
   "license": "MIT",
-  "devDependencies": {}
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
 }
