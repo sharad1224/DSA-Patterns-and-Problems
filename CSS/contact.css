@@ -12,6 +12,18 @@ body {
   min-height: 100vh;
 }
 
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(90deg, #fbb69f, #f68c6e, #f16363);
+  color: #fff;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+}
+/* Main content sections */
 /* Navbar */
 .navbar {
   display: flex;
@@ -71,6 +83,7 @@ body {
 }
 
 /* Main Content */
+
 main {
   max-width: 1200px;
   margin: 2rem auto;
